@@ -1,3 +1,18 @@
+/* Error: Undefined variable.
+ *    ,
+ * 12 |         background:$color-primary;
+ *    |                    ^^^^^^^^^^^^^^
+ *    '
+ *   projet3\sass\base\_base.scss 12:20  @import
+ *   projet3\sass\main.scss 3:9          root stylesheet */
 
-
-/*# sourceMappingURL=main.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 12 \2502          background:$color-primary;\d\a    \2502                     ^^^^^^^^^^^^^^\a    \2575 \a   projet3\\sass\\base\\_base.scss 12:20  @import\a   projet3\\sass\\main.scss 3:9          root stylesheet";
+}

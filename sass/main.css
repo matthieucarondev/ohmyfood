@@ -1,1 +1,12 @@
-/*# sourceMappingURL=main.css.map */
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.loader {
+  width: 100%;
+}
+.loader__itemContaire {
+  background: color-primary;
+}
