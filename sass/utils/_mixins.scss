@@ -2,5 +2,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    }
+@mixin fontstuf ($couleur,$valeur) {
+    #{$couleur}:$valeur
     
+}    
+@mixin loader ($valeur){
+    border-radius: 50px;
+    border: 6px solid $valeur;
 }
+@mixin loaderAnni{
+    content:'';
+    position: absolute;
+    top: -6px;left:-6px;bottom: -6px;right: -6px;
+    border: 6px solid transparent;
+    border-radius: 50px; 
+    animation: spin 2s linear  infinite;  
+ }
+

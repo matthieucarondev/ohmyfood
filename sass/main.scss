@@ -1,3 +1,42 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./base/base";
+ .loader{
+
+    height: 500px;
+    line-height: 500px;
+    background-color: rgb(20, 149, 70);
+    @include flexCenter;
+      
+    &__item{
+        width: 50px;
+        height: 50px;
+        @include flexCenter;
+         vertical-align: middle;
+         position: relative;
+    }
+        &__item1{
+        @include flexCenter;
+       @include loader (rgb(255,255,255,0.2))
+    }
+    &__item1:after
+    {
+        @include loaderAnni;
+       border-top-color: $color-Primary;
+      
+    }
+    &__item2::after
+    {
+        @include loaderAnni;
+        border-bottom-color: $color-secondary;
+    }
+  
+   
+
+    @keyframes spin {
+        0%{transform: rotate(0deg);}  
+        100%{transform: rotate(360deg);}     
+    }
+  
+    
+ }
