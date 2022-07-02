@@ -1,8 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+@media all and (min-width: 100px){
+
   
   .loader {
     position: absolute;
@@ -18,8 +15,8 @@
 }
 .lettre {
     color: rgb(255, 255, 255,0.4);
-    font-size: 80px;
-    letter-spacing: 15px;
+    font-size: 2rem;
+    letter-spacing: .25rem;
     margin-bottom: 150px;
     animation: flash 1.2s linear infinite;
 }
@@ -78,4 +75,5 @@
 .fondu-out {
     opacity: 0;
     transition: opacity 0.4s ease-out;
+}
 }
