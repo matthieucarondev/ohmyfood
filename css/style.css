@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@keyframes fave-heart {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2800px 0;
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -208,14 +216,6 @@ a {
   transition: background 1s steps(28);
 }
 
-@keyframes fave-heart {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: -2800px 0;
-  }
-}
 @media all and (min-width: 100px) {
   .loader {
     position: absolute;
@@ -488,6 +488,22 @@ a {
     content: "";
     background: linear-gradient(0deg, #9356dc, #ff79da);
   }
+  .heart {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 90%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: url(https://cssanimation.rocks/images/posts/steps/heart.png) no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    animation: fave-heart 1s steps(28);
+  }
+  .heart:hover {
+    background-position: -2800px 0;
+    transition: background 1s steps(28);
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1028px) {
   body {
@@ -666,6 +682,22 @@ a {
     transition: 0.5s;
     content: "";
     background: linear-gradient(0deg, #9356dc, #ff79da);
+  }
+  .heart {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 90%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: url(https://cssanimation.rocks/images/posts/steps/heart.png) no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    animation: fave-heart 1s steps(28);
+  }
+  .heart:hover {
+    background-position: -2800px 0;
+    transition: background 1s steps(28);
   }
 }
 
