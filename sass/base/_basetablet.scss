@@ -194,6 +194,33 @@
         transition: background 1s steps(28);
       }
      
-        
+      .footer{
+        background-color: #343434;
+        color: #fff;
+        &_img{
+            filter: invert(100);
+            width:10rem;
+            padding: .75rem 3rem;
+            display: block;
+                margin-left: auto;
+                margin-right: auto;
+        }
+        &-list{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-content: center;
+            margin: 0;
+            list-style: none;
+            padding-left: 3rem;
+            &__link{
+                text-decoration: none;
+                color: #fff;
+            }
+            &_el{
+                padding-bottom: .5rem;
+            }
+        }
+    }
       
     }

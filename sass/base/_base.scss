@@ -191,22 +191,83 @@ a{
            
           }
         }
-        .heart {
-            width: 100px;
-            height: 100px;
-            position: absolute;
-          left: 90%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            background: url(https://cssanimation.rocks/images/posts/steps/heart.png) no-repeat;
-            background-position: 0 0;
-            cursor: pointer;
-            animation: fave-heart 1s steps(28);
+        
+        .card__btn {
+            height: 2rem;
+            width: 2rem;
+            background-color: initial;
+            border: 0 solid transparent;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .menu {
+            margin-top: -4rem;
+            border-radius: 2rem 2rem 0 0;
+            background-color: #f6f6f6;
+            z-index: 1;
+            position: relative;
+          
+           
+          
+            &__btn {
+              height: 2rem;
+              width: 2rem;
+              background-color: transparent;
+              border: transparent 0px solid;
+              padding: 0;
+              display:flex;
+              align-items:center;
+              justify-content:center;
+              cursor: pointer;
+              position: relative;
+              background-color: black;
+              
+              &:hover::before {
+                opacity: 1;
+              }
+              
+              &::before {
+                opacity: 0;
+                transition: 0.5s;
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background:linear-gradient(0deg, $color-Primary 0%,$color-secondary 100%);
+              }
+            }
+          
+            &__like {
+              transition-duration: .25s;
+              background-color: #f6f6f6;
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 100%;
+              display:flex;
+              align-items:center;
+              justify-content:center;
+              mix-blend-mode: lighten;
+            }
+          
+            &__btn:hover {
+              .menu__like {
+                &--noBg {
+                  opacity: 0;
+                }
+              }
+            }
           }
-          .heart:hover {
-            background-position: -2800px 0;
-            transition: background 1s steps(28);
-          }
+          
+       
+        
+        
+
          
           .footer{
             background-color: #343434;
@@ -215,15 +276,24 @@ a{
                 filter: invert(100);
                 width:10rem;
                 padding: .75rem 3rem;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
             }
             &-list{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-content: center;
                 margin: 0;
                 list-style: none;
-                padding-left: 3rem;
+              height: 3rem;
+
                 &__link{
                     text-decoration: none;
+                    color: #fff;
                 }
             }
         }
 
-        
+    
