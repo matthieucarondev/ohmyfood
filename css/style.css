@@ -189,29 +189,33 @@ a {
 .card__like {
   background-color: white !important;
 }
-.card .menu_btn {
-  height: 2rem;
-  width: 2rem;
-  background-color: initial;
-  border: 0 solid transparent;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.heart {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 90%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: url(https://cssanimation.rocks/images/posts/steps/heart.png) no-repeat;
+  background-position: 0 0;
   cursor: pointer;
-  position: relative;
-  background-color: #000;
-}
-.card .menu_btn:hover {
-  opacity: 1;
-}
-.card .menu_btn::before {
-  opacity: 0;
-  transition: 0.5s;
-  content: "";
-  background: linear-gradient(0deg, #9356dc, #ff79da);
+  animation: fave-heart 1s steps(28);
 }
 
+.heart:hover {
+  background-position: -2800px 0;
+  transition: background 1s steps(28);
+}
+
+@keyframes fave-heart {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2800px 0;
+  }
+}
 @media all and (min-width: 100px) {
   .loader {
     position: absolute;
