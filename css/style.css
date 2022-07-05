@@ -216,6 +216,24 @@ a {
   transition: background 1s steps(28);
 }
 
+.footer {
+  background-color: #343434;
+  color: #fff;
+}
+.footer_img {
+  filter: invert(100);
+  width: 10rem;
+  padding: 0.75rem 3rem;
+}
+.footer-list {
+  margin: 0;
+  list-style: none;
+  padding-left: 3rem;
+}
+.footer-list__link {
+  text-decoration: none;
+}
+
 @media all and (min-width: 100px) {
   .loader {
     position: absolute;

@@ -208,6 +208,22 @@ a{
             transition: background 1s steps(28);
           }
          
-          
-          
+          .footer{
+            background-color: #343434;
+            color: #fff;
+            &_img{
+                filter: invert(100);
+                width:10rem;
+                padding: .75rem 3rem;
+            }
+            &-list{
+                margin: 0;
+                list-style: none;
+                padding-left: 3rem;
+                &__link{
+                    text-decoration: none;
+                }
+            }
+        }
+
         
