@@ -9,10 +9,32 @@ a{
 .logo{
     @include flexCenter;
     width: 100%;
+    height: 5rem;
     margin: 0;
     padding: 15px 0px;
     text-align: center;
     border-bottom: 4px solid rgb(209, 207, 207);
+    &--food{
+        width: 50%;
+    }
+    &-retour{
+        text-decoration: none;
+        color: black;
+        float: right;
+        &_icon{
+            position: absolute;
+            left: 2rem;
+            height: 2rem;
+            width: 2rem;
+            top: 3.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translateY(-50%);
+            font-size: 2.2rem;
+            color: #000;
+        }
+    }
 }
 .location{
     @include flexCenter;
