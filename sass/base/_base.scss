@@ -235,7 +235,7 @@ max-width: 100%;
             background-color: #f6f6f6;
             z-index: 1;
             position: relative;
-          &
+          
            &-header{
             padding: 1rem 2rem 0 1rem;
             display: flex;
@@ -304,7 +304,7 @@ max-width: 100%;
                 display: flex;
                 justify-content: flex-end;
                 align-items: flex-end;
-                padding-left: .5rem;
+                padding-left: 5.5rem;
             }
             &-confir {
                 background-color: $color-tertiary;
@@ -339,7 +339,7 @@ max-width: 100%;
               &-check{
                 color: $color-tertiary;
               }
-            
+         }
          }
             &__btn {
               height: 2rem;
@@ -393,7 +393,7 @@ max-width: 100%;
               }
             }
           }
-        }
+        
           .listplat{
             max-width: 100%;
             overflow: hidden;
@@ -432,4 +432,4 @@ max-width: 100%;
             }
         }
 
-    
+        

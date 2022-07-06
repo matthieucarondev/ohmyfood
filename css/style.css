@@ -251,7 +251,7 @@ a {
   z-index: 1;
   position: relative;
 }
-.menu .menu-header {
+.menu-header {
   padding: 1rem 2rem 0 1rem;
   display: flex;
   align-items: center;
@@ -321,7 +321,7 @@ a {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  padding-left: 0.5rem;
+  padding-left: 5.5rem;
 }
 .menu-list_plat-confir {
   background-color: #99E2D0;
@@ -352,7 +352,7 @@ a {
 .menu-list_plat-check {
   color: #99E2D0;
 }
-.menu-list__btn {
+.menu__btn {
   height: 2rem;
   width: 2rem;
   background-color: transparent;
@@ -365,10 +365,10 @@ a {
   position: relative;
   background-color: black;
 }
-.menu-list__btn:hover::before {
+.menu__btn:hover::before {
   opacity: 1;
 }
-.menu-list__btn::before {
+.menu__btn::before {
   opacity: 0;
   transition: 0.5s;
   content: "";
@@ -379,7 +379,7 @@ a {
   width: 100%;
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
 }
-.menu-list__like {
+.menu__like {
   transition-duration: 0.25s;
   background-color: #f6f6f6;
   position: absolute;
@@ -392,7 +392,7 @@ a {
   justify-content: center;
   mix-blend-mode: lighten;
 }
-.menu-list__btn:hover .menu__like--noBg {
+.menu__btn:hover .menu__like--noBg {
   opacity: 0;
 }
 
