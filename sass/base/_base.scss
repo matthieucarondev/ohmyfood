@@ -212,13 +212,13 @@ max-width: 100%;
             padding: 0;
            @include flexCenter;
             
-          }
-          &__like {
+          } &__like {
             background-color: white!important;
            
           }
+         
             &-new{
-             background-color: #99e2d0;
+             background-color: $color-tertiary;
             color: #1b6150;
             padding: .5rem;
             border-radius: .125rem;

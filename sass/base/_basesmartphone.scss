@@ -28,6 +28,7 @@
             font-size: 2.2rem;
             color: #000;
             }
+        }
     .location{
         @include flexCenter;
         padding: 1.2rem 1rem;
@@ -188,7 +189,21 @@
         background-color: white!important;
        
       }
-.menu_btn{
+    }
+.menu{
+    &--plats{
+        display: grid;
+      grid-template-columns: repeat(1,1fr);
+      column-gap: 1rem;
+    }
+    &-list_plat_prix {
+        font-weight: 700;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-left:18.5rem;
+    }
+&_btn{
     height: 2rem;
     width: 2rem;
     background-color: initial;
@@ -210,23 +225,8 @@
     background: linear-gradient(0deg,#9356dc,#ff79da);
      }
 }
+
 }
-.heart {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-  left: 90%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background: url(https://cssanimation.rocks/images/posts/steps/heart.png) no-repeat;
-    background-position: 0 0;
-    cursor: pointer;
-    animation: fave-heart 1s steps(28);
-  }
-  .heart:hover {
-    background-position: -2800px 0;
-    transition: background 1s steps(28);
-  }
   .footer{
     background-color: #343434;
     color: #fff;
@@ -247,6 +247,5 @@
             padding-bottom: .5rem;
         }
     }
-}
 }
 }
