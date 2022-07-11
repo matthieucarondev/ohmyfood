@@ -6,7 +6,15 @@
 @mixin fontstuf ($couleur,$valeur) {
     #{$couleur}:$valeur
     
-}    
+}
+@mixin delayLettre {
+    @for $i from 1 to 10 {
+      &:nth-child(#{$i}) {
+        animation-delay: 0.1s * $i;
+      }
+    }
+}
+      
 @mixin loader ($valeur){
     border-radius: 50px;
     border: 6px solid $valeur;

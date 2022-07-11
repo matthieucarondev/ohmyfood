@@ -201,7 +201,10 @@
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
-        padding-left:18.5rem;
+        padding-left:.5rem;
+    }
+    &-list_plat_heade{
+        flex:1;
     }
 &_btn{
     height: 2rem;
@@ -230,12 +233,17 @@
   .footer{
     background-color: #343434;
     color: #fff;
+   
     &_img{
         filter: invert(100);
         width:10rem;
         padding: .75rem 3rem;
+    
+        
     }
     &-list{ 
+        display: flex;
+        flex-direction: column;
         margin: 0;
         list-style: none;
         padding-left: 3rem;
