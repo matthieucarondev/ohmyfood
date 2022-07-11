@@ -1,6 +1,6 @@
 
   
-  
+  @media screen and (min-width: 993px) {
 body{
     margin: 0;
     padding: 0;
@@ -236,8 +236,11 @@ max-width: 100%;
                 animation-delay: 4s;
          }
         }
-        
-     
+        .container {
+            max-width: 1280px;
+            margin: auto;
+            position: relative;   
+        }
 .menu {
      margin-top: -4rem;
      border-radius: 2rem 2rem 0 0;
@@ -284,7 +287,7 @@ max-width: 100%;
             box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
             overflow: hidden;
             cursor: pointer;
-            animation: Appear 1s;
+            animation: Appear 3s;
             animation-fill-mode: both;
             transform: scale(0);
             animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
@@ -401,7 +404,7 @@ max-width: 100%;
           }
           @for $i from 0 to 9 {
             .delay-#{$i}{
-              animation-delay:#{$i/70}s;     
+              animation-delay:#{$i/1}s;     
             }
         
             }
@@ -439,17 +442,18 @@ max-width: 100%;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
-                align-content: center;
+                align-items: center;
                 margin: 0;
                 list-style: none;
-              padding: 0;
+                padding: 0;
+               height: 3rem;
 
                 &__link{
                     text-decoration: none;
                     color: #fff;
    
                 }}}
-      
+            }
     
 
 
