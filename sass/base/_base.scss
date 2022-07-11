@@ -178,6 +178,9 @@ max-width: 100%;
             row-gap: 2rem;
         }
     }
+    figure{
+        margin: 0%;
+    }
     
 .card{
         background-color: #fff;
@@ -187,7 +190,7 @@ max-width: 100%;
         color: inherit;
         display: block;
              &:hover .card_img   {
-            height: 13rem;
+           
             border: 4px solid $color-secondary;
              }
              &_img{
