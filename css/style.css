@@ -193,6 +193,10 @@
     text-decoration: none;
     color: inherit;
     display: block;
+    animation: Appear 3s;
+    animation-fill-mode: both;
+    transform: scale(0);
+    animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
   }
   .card:hover .card_img {
     border: 4px solid #FF79DA;
@@ -242,6 +246,21 @@
     position: absolute;
     top: 2rem;
     right: 3.75rem;
+    animation-delay: 4s;
+  }
+  .card .delay-0 {
+    animation-delay: 0s;
+  }
+  .card .delay-1 {
+    animation-delay: 1s;
+  }
+  .card .delay-2 {
+    animation-delay: 2s;
+  }
+  .card .delay-3 {
+    animation-delay: 3s;
+  }
+  .card .delay-4 {
     animation-delay: 4s;
   }
   .container {
@@ -428,6 +447,9 @@
   .delay-8 {
     animation-delay: 8s;
   }
+  .delay-9 {
+    animation-delay: 9s;
+  }
   .listplat {
     max-width: 100%;
     overflow: hidden;
@@ -468,7 +490,8 @@
 }
 @media all and (min-width: 100px) {
   .loader {
-    position: absolute;
+    position: fixed;
+    z-index: 100;
     width: 100%;
     height: 100%;
     background: #fff;
@@ -476,7 +499,7 @@
     justify-content: center;
     align-items: center;
     animation-delay: 1.75s;
-    animation: loader 4s;
+    animation: loader 10s;
     animation-fill-mode: both;
   }
   .lettre {
@@ -733,6 +756,10 @@
     text-decoration: none;
     color: inherit;
     display: block;
+    animation: Appear 3s;
+    animation-fill-mode: both;
+    transform: scale(0);
+    animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
   }
   .card:hover .card_img {
     border: 4px solid #FF79DA;
@@ -781,6 +808,21 @@
     position: absolute;
     top: 2rem;
     right: 3.75rem;
+    animation-delay: 4s;
+  }
+  .card .delay-0 {
+    animation-delay: 0s;
+  }
+  .card .delay-1 {
+    animation-delay: 1s;
+  }
+  .card .delay-2 {
+    animation-delay: 2s;
+  }
+  .card .delay-3 {
+    animation-delay: 3s;
+  }
+  .card .delay-4 {
     animation-delay: 4s;
   }
   .container {
@@ -1153,6 +1195,10 @@
     text-decoration: none;
     color: inherit;
     display: block;
+    animation: Appear 3s;
+    animation-fill-mode: both;
+    transform: scale(0);
+    animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
   }
   .card:hover .card_img {
     height: 13rem;
@@ -1202,6 +1248,21 @@
     position: absolute;
     top: 2rem;
     right: 3.75rem;
+    animation-delay: 4s;
+  }
+  .card .delay-0 {
+    animation-delay: 0s;
+  }
+  .card .delay-1 {
+    animation-delay: 1s;
+  }
+  .card .delay-2 {
+    animation-delay: 2s;
+  }
+  .card .delay-3 {
+    animation-delay: 3s;
+  }
+  .card .delay-4 {
     animation-delay: 4s;
   }
   .listplat {
