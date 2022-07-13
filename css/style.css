@@ -226,8 +226,8 @@
     margin: 0;
   }
   .card__btn {
-    height: 1rem;
-    width: 1rem;
+    height: 3rem;
+    width: 3rem;
     background-color: transparent;
     border: transparent 0px solid;
     padding: 0;
@@ -381,8 +381,8 @@
     color: #99E2D0;
   }
   .menu__btn {
-    height: 1rem;
-    width: 1rem;
+    height: 3rem;
+    width: 3rem;
     background-color: transparent;
     border: transparent 0px solid;
     padding: 0;
