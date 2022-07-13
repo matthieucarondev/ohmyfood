@@ -40,7 +40,7 @@
     .research{
         width: 95%;
         text-align: center;
-        padding: 2rem;
+        padding: 0rem;
         background-color: #fafafa;
         &_title{
             text-align: center;
@@ -387,7 +387,7 @@
                      }
                    }
                  }
-                 @for $i from 0 to 9 {
+                 @for $i from 0 to 10 {
                    .delay-#{$i}{
                      animation-delay:#{$i/1}s;     
                    }

@@ -63,7 +63,7 @@ max-width: 100%;
 .research{
     width: 95%;
     text-align: center;
-    padding: 2rem;
+    padding: 0rem;
     background-color: #fafafa;
     &_title{
         text-align: center;
@@ -420,17 +420,11 @@ max-width: 100%;
             }
         
             }
-
-    
-        
-        
           .listplat{
             max-width: 100%;
             overflow: hidden;
             padding: 0 1rem;
            }
-          
-       
         .command-btn{
             @include flexCenter;
             padding: 2.25rem 1rem;

@@ -56,7 +56,7 @@
     .research{
         width: 86%;
         text-align: center;
-        padding: 2rem;
+        padding: 0rem;
         background-color: #fafafa;
         &_title{
             text-align: center;
@@ -285,6 +285,7 @@ figure{
            padding: 0rem;
            width: 80%;
          &_plat{
+            width: 100%;
            background-color: white;
            padding: 1rem;
            display: flex;
@@ -297,7 +298,7 @@ figure{
            animation-fill-mode: both;
            transform: scale(0);
            animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
-           max-width: 95%;
+           max-width: 100%;
            justify-content: space-between;
           
            &_header{
@@ -409,7 +410,7 @@ figure{
              }
            }
          }
-         @for $i from 0 to 9 {
+         @for $i from 0 to 10 {
            .delay-#{$i}{
              animation-delay:#{$i/1}s;     
            }

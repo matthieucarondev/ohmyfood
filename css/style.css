@@ -83,7 +83,7 @@
   .research {
     width: 95%;
     text-align: center;
-    padding: 2rem;
+    padding: 0rem;
     background-color: #fafafa;
   }
   .research_title {
@@ -651,7 +651,7 @@
   .research {
     width: 86%;
     text-align: center;
-    padding: 2rem;
+    padding: 0rem;
     background-color: #fafafa;
   }
   .research_title {
@@ -877,6 +877,7 @@
     width: 80%;
   }
   .menu-list_plat {
+    width: 100%;
     background-color: white;
     padding: 1rem;
     display: flex;
@@ -889,7 +890,7 @@
     animation-fill-mode: both;
     transform: scale(0);
     animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-    max-width: 95%;
+    max-width: 100%;
     justify-content: space-between;
   }
   .menu-list_plat_header {
@@ -1016,6 +1017,9 @@
   .delay-8 {
     animation-delay: 8s;
   }
+  .delay-9 {
+    animation-delay: 9s;
+  }
   .command-btn {
     display: flex;
     justify-content: center;
@@ -1093,7 +1097,7 @@
   .research {
     width: 95%;
     text-align: center;
-    padding: 2rem;
+    padding: 0rem;
     background-color: #fafafa;
   }
   .research_title {
@@ -1452,6 +1456,9 @@
   }
   .delay-8 {
     animation-delay: 8s;
+  }
+  .delay-9 {
+    animation-delay: 9s;
   }
   .command-btn {
     display: flex;
