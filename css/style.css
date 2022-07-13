@@ -655,7 +655,7 @@
     font-weight: 700;
   }
   .research {
-    width: 86%;
+    width: 95%;
     text-align: center;
     padding: 0rem;
     background-color: #fafafa;
@@ -794,8 +794,8 @@
     margin: 0;
   }
   .card__btn {
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
     background-color: transparent;
     border: transparent 0px solid;
     padding: 0;
@@ -957,8 +957,8 @@
     color: #99E2D0;
   }
   .menu__btn {
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
     background-color: transparent;
     border: transparent 0px solid;
     padding: 0;
@@ -1244,8 +1244,8 @@
     margin: 0;
   }
   .card__btn {
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
     background-color: transparent;
     border: transparent 0px solid;
     padding: 0;
@@ -1403,8 +1403,8 @@
     color: #99E2D0;
   }
   .menu__btn {
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
     background-color: transparent;
     border: transparent 0px solid;
     padding: 0;
