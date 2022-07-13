@@ -263,6 +263,9 @@
   .card .delay-4 {
     animation-delay: 4s;
   }
+  .card .delay-5 {
+    animation-delay: 5s;
+  }
   .container {
     max-width: 1280px;
     margin: auto;
@@ -449,6 +452,9 @@
   }
   .delay-9 {
     animation-delay: 9s;
+  }
+  .delay-10 {
+    animation-delay: 10s;
   }
   .listplat {
     max-width: 100%;
@@ -825,6 +831,9 @@
   .card .delay-4 {
     animation-delay: 4s;
   }
+  .card .delay-5 {
+    animation-delay: 5s;
+  }
   .container {
     max-width: 1280px;
     margin: auto;
@@ -1019,6 +1028,9 @@
   }
   .delay-9 {
     animation-delay: 9s;
+  }
+  .delay-10 {
+    animation-delay: 10s;
   }
   .command-btn {
     display: flex;
@@ -1269,6 +1281,9 @@
   .card .delay-4 {
     animation-delay: 4s;
   }
+  .card .delay-5 {
+    animation-delay: 5s;
+  }
   .listplat {
     max-width: 100%;
     overflow: hidden;
@@ -1459,6 +1474,9 @@
   }
   .delay-9 {
     animation-delay: 9s;
+  }
+  .delay-10 {
+    animation-delay: 10s;
   }
   .command-btn {
     display: flex;
