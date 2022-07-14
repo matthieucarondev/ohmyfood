@@ -2,29 +2,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    }
-@mixin fontstuf ($couleur,$valeur) {
-    #{$couleur}:$valeur
-    
 }
+
+@mixin fontstuf ($couleur, $valeur) {
+    #{$couleur}: $valeur
+}
+
 @mixin delayLettre {
     @for $i from 1 to 10 {
-      &:nth-child(#{$i}) {
-        animation-delay: 0.1s * $i;
-      }
+        &:nth-child(#{$i}) {
+            animation-delay: 0.1s * $i;
+        }
     }
 }
-      
-@mixin loader ($valeur){
+
+@mixin loader ($valeur) {
     border-radius: 50px;
     border: 6px solid $valeur;
 }
-@mixin loaderAnni{
-    content:'';
-    position:absolute;
-    top: -6px;left:-6px;bottom: -6px;right: -6px;
-    border: 6px solid transparent;
-    border-radius: 50px; 
-    animation: spin 2s linear  infinite;  
- }
 
+@mixin loaderAnni {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    bottom: -6px;
+    right: -6px;
+    border: 6px solid transparent;
+    border-radius: 50px;
+    animation: spin 2s linear infinite;
+}
