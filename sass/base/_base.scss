@@ -53,7 +53,7 @@ li{
 .location{
     @include flexCenter;
     padding: 1.2rem 1rem;
-    background-color: #f3f3f3;
+    background-color: $background-one;
     font-size: 1.2rem;
     &-icon{
         margin-right: 1rem;
@@ -67,7 +67,7 @@ li{
     width: 100%;
     text-align: center;
     padding: 0rem;
-    background-color: #fafafa;
+    background-color:$background-research;
     &_title{
         text-align: center;
         margin: 0;
@@ -81,7 +81,7 @@ li{
     &_btn{
         border: 0;
         padding: .75rem 1.5rem;
-        color: #fff;
+        color:$color-text;
         font-size: 1.1rem;
         font-weight: 500;
         border-radius: 100px;
@@ -91,7 +91,7 @@ li{
         box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
         transition-duration: 2s;
            &:hover{
-                 background-color: #fff;
+                 background-color: $color-one;
                  box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 80%);
                  background-image: linear-gradient(90deg,$color-secondary,$color-Primary);
 
@@ -121,7 +121,8 @@ li{
     }
     &_listing{
         
-        background-color: #f6f6f6;
+        background-color: $background-two;
+        ;
         padding: 1.5rem;
         border-radius: 1.25rem;
         margin: 1rem 0 1rem 1rem ;
@@ -136,14 +137,14 @@ li{
         &::before{
             counter-increment: compteListe 1;
             content: counter(compteListe) " ";
-            background: #9356dc;
+            background: $color-Primary;
             height: 1.5rem;
             width: 1.5rem;
             border-radius: 100px;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: #fff;
+            color: $color-one;
             position: absolute;
             left: -0.75rem;
         }
@@ -171,7 +172,7 @@ li{
     }
 }
 .resto{
-        background-color: #f6f6f6;
+        background-color: $background-two;
         padding: 2rem 1rem;
         &_list{
             display: grid;
@@ -185,7 +186,7 @@ li{
     }
     
 .card{
-        background-color: #fff;
+        background-color: $color-one;
         border-radius: 1rem;
         position: relative;
         text-decoration: none;
@@ -259,7 +260,7 @@ li{
 .menu {
      margin-top: -4rem;
      border-radius: 2rem 2rem 0 0;
-    background-color: #f6f6f6;
+    background-color: $background-two;
      z-index: 1;
     position: relative;
      &-header{
@@ -351,7 +352,7 @@ li{
                 &__icon{
                     height: 1.6rem;
                     width: 1.6rem;
-                    background-color: #fff;
+                    background-color:$color-one;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -401,7 +402,7 @@ li{
         
         &__like {
             transition-duration: .25s;
-            background-color: #f6f6f6;
+            background-color: $background-two;
             position: absolute;
             top: 0;
             left: 0;
@@ -437,8 +438,8 @@ li{
 
         }
 .footer{
-            background-color: #343434;
-            color: #fff;
+            background-color: $background-footer;
+            color:$color-one;
             &_img{
                 filter: invert(100);
                 width:10rem;
@@ -459,7 +460,7 @@ li{
 
                 &-link{
                     text-decoration: none;
-                    color: #fff;
+                    color:$color-one;
    
                 }}}
             

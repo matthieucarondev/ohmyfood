@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
     animation-delay: 1.75s;
-    animation: loader 10s;
+    animation: loader $temp-loader;
     animation-fill-mode: both;
 }
 .lettre {
@@ -19,7 +19,7 @@
     font-size: 2rem;
     letter-spacing: .25rem;
     margin-bottom: 150px;
-    animation: flash 1.2s linear infinite;
+    animation: flash $temp-flash linear infinite;
         @include delayLettre;
     
 }
@@ -43,10 +43,6 @@
       z-index: -10;
     }
   } 
-  .lettre {
-    @include delayLettre;
-}
-
 
 .fondu-out {
     opacity: 0;
