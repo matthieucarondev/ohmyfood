@@ -1,6 +1,9 @@
 @media all and (max-width: 767px) {
    
 .logo{
+        &--food{
+            width: 50%;
+        }
         &-retour_icon {
             left: 1rem;
             }
@@ -21,7 +24,7 @@
               }
     }
 .menu {
-      &--plats{
+      &-plats{
              grid-template-columns: repeat(1,1fr);
              padding:1rem;
          }
@@ -29,7 +32,7 @@
             width: 95%;
              &_plat{
                  width: 100%;
-                     &_prix{
+                     &__prix{
                          padding-left: .5rem;
                      }
                      }
@@ -39,17 +42,18 @@
 
 
   .footer{
-    &-list{ 
+    height: 10rem;
+    &_list{ 
         display: flex;
         margin-top: 2rem;
         list-style: none;
         padding-left: 10rem;
         flex-direction: column;
         align-items: flex-start;
-    }
-        &__link_el{
+    
+        &-el{
             padding-bottom: .5rem;
         }
     }
 }
-
+}

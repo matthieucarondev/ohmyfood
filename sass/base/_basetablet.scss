@@ -9,16 +9,16 @@
                }
           }   
 .menu {
-         &--plats{
+         &-plats{
           grid-template-columns: repeat(1,1fr);
           padding:1rem;
-         } &-list_plat_prix{
+         } &-list_plat__prix{
             padding-left: .5rem;
              }
         }
 
  .footer{
-        &-list__link_el{
+        &_list-el{
                 padding-bottom: .5rem;
             }
         }

@@ -50,7 +50,7 @@ li {
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2509803922);
 }
 .logo--food {
-  width: 50%;
+  width: 20%;
 }
 .logo-retour {
   text-decoration: none;
@@ -221,7 +221,7 @@ figure {
   object-fit: cover;
   position: relative;
 }
-.card-body {
+.card_body {
   padding: 1rem;
   position: relative;
   display: flex;
@@ -230,10 +230,10 @@ figure {
 .card_content {
   flex: 1;
 }
-.card-title {
+.card_title {
   margin: 0 0 0.25rem;
 }
-.card--text {
+.card_text {
   margin: 0;
 }
 .card__btn {
@@ -249,7 +249,7 @@ figure {
 .card__like {
   background-color: white !important;
 }
-.card-new {
+.card_new {
   background-color: #99E2D0;
   color: #1b6150;
   padding: 0.5rem;
@@ -297,21 +297,21 @@ figure {
   align-items: center;
   justify-content: space-between;
 }
-.menu-title {
+.menu-header_title {
   font-family: Shrikhand, "cursive";
 }
-.menu--plats {
+.menu-plats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 1rem;
 }
-.menu__titles {
+.menu-plats_titles {
   text-transform: uppercase;
   position: relative;
   padding-bottom: 0.5rem;
   font-weight: 400;
 }
-.menu__titles::after {
+.menu-plats_titles::after {
   content: "";
   width: 3rem;
   height: 0.25rem;
@@ -339,32 +339,32 @@ figure {
   max-width: 100%;
   justify-content: space-between;
 }
-.menu-list_plat_header {
+.menu-list_plat__header {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   flex: 1;
 }
-.menu-list_plat_header-titles {
+.menu-list_plat__header-titles {
   margin: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu-list_plat_header-desc {
+.menu-list_plat__header-desc {
   margin: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menu-list_plat_prix {
+.menu-list_plat__prix {
   font-weight: 700;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   padding-left: 2.5rem;
 }
-.menu-list_plat-confir {
+.menu-list_plat__confir {
   background-color: #99E2D0;
   margin: -1rem -5rem -1rem 1rem;
   width: 4rem;
@@ -373,10 +373,10 @@ figure {
   justify-content: center;
   transition-duration: 0.5s;
 }
-.menu-list_plat:hover .menu-list_plat-confir {
+.menu-list_plat:hover .menu-list_plat__confir {
   margin-right: -1rem;
 }
-.menu-list_plat-icon {
+.menu-list_plat__icon {
   height: 1.6rem;
   width: 1.6rem;
   background-color: #fff;
@@ -387,11 +387,11 @@ figure {
   transform: rotate(180deg);
   transition-duration: 0.5s;
 }
-.menu-list_plat:hover .menu-list_plat-icon {
-  transform: rotate(0);
-}
-.menu-list_plat-check {
+.menu-list_plat__icon-check {
   color: #99E2D0;
+}
+.menu-list_plat:hover .menu-list_plat__icon {
+  transform: rotate(0);
 }
 .menu__btn {
   height: 3rem;
@@ -506,7 +506,7 @@ figure {
   margin-left: auto;
   margin-right: auto;
 }
-.footer-list {
+.footer_list {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -516,7 +516,7 @@ figure {
   padding: 0;
   height: 3rem;
 }
-.footer-list__link {
+.footer_list-link {
   text-decoration: none;
   color: #fff;
 }
@@ -622,6 +622,9 @@ figure {
   }
 }
 @media all and (max-width: 767px) {
+  .logo--food {
+    width: 50%;
+  }
   .logo-retour_icon {
     left: 1rem;
   }
@@ -635,7 +638,7 @@ figure {
   .resto_list {
     grid-template-columns: repeat(1, 1fr);
   }
-  .menu--plats {
+  .menu-plats {
     grid-template-columns: repeat(1, 1fr);
     padding: 1rem;
   }
@@ -645,10 +648,13 @@ figure {
   .menu-list_plat {
     width: 100%;
   }
-  .menu-list_plat_prix {
+  .menu-list_plat__prix {
     padding-left: 0.5rem;
   }
-  .footer-list {
+  .footer {
+    height: 10rem;
+  }
+  .footer_list {
     display: flex;
     margin-top: 2rem;
     list-style: none;
@@ -656,7 +662,7 @@ figure {
     flex-direction: column;
     align-items: flex-start;
   }
-  .footer__link_el {
+  .footer_list-el {
     padding-bottom: 0.5rem;
   }
 }
@@ -668,14 +674,14 @@ figure {
     margin: 0;
     flex-direction: column;
   }
-  .menu--plats {
+  .menu-plats {
     grid-template-columns: repeat(1, 1fr);
     padding: 1rem;
   }
-  .menu-list_plat_prix {
+  .menu-list_plat__prix {
     padding-left: 0.5rem;
   }
-  .footer-list__link_el {
+  .footer_list-el {
     padding-bottom: 0.5rem;
   }
 }
