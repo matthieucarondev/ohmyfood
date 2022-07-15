@@ -504,9 +504,9 @@ figure {
     &_img {
         filter: invert(100);
         width: 10rem;
-        padding: .75rem 3rem;
+        padding: .75rem 0rem;
         display: block;
-        margin-left: auto;
+        padding-left: 10rem;
         margin-right: auto;
     }
 
