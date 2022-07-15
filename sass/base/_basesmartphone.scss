@@ -56,9 +56,10 @@
             display: flex;
             margin-top: 2rem;
             list-style: none;
-            padding-left: 10rem;
+            margin-left: auto;
+                margin-right: auto;
             flex-direction: column;
-            align-items: flex-start;
+           
 
             &-el {
                 padding-bottom: .5rem;
