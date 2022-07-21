@@ -283,11 +283,7 @@ figure {
         animation-delay: 4s;
     }
 
-    @for $i from 0 through 5 {
-        .delay-#{$i} {
-            animation-delay:#{$i/1}s;
-        }
-    }
+   
 }
 
 .container {
@@ -478,12 +474,7 @@ figure {
     }
 }
 
-@for $i from 0 through 10 {
-    .delay-#{$i} {
-        animation-delay:#{$i/1}s;
-    }
-
-}
+@include délayapparition;
 
 .listplat {
     max-width: 100%;
