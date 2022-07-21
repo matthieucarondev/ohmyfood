@@ -36,6 +36,6 @@
     
     @for $i from 0 through $maxelement {
             .delay-#{$i} {
-                animation-delay:#{$i/1}s;
+                animation-delay:#{$i/$delaytemp}s;
             }
 }}
