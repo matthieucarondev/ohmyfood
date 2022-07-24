@@ -80,14 +80,21 @@ li {
   font-size: 1.2rem;
 }
 .location-icon {
-  margin-right: 1rem;
+  margin: 0 1rem;
 }
 .location__text {
+  margin: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  background-color: #f3f3f3;
+  border: none;
   font-weight: 700;
 }
 
 .research {
-  height: 13rem;
+  height: 16rem;
   width: 100%;
   text-align: center;
   padding: 0rem;
@@ -259,24 +266,6 @@ figure {
   top: 2rem;
   right: 3.75rem;
   animation-delay: 4s;
-}
-.card .delay-0 {
-  animation-delay: 0s;
-}
-.card .delay-1 {
-  animation-delay: 1s;
-}
-.card .delay-2 {
-  animation-delay: 2s;
-}
-.card .delay-3 {
-  animation-delay: 3s;
-}
-.card .delay-4 {
-  animation-delay: 4s;
-}
-.card .delay-5 {
-  animation-delay: 5s;
 }
 
 .container {

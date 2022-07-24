@@ -65,10 +65,15 @@ li {
     font-size: 1.2rem;
 
     &-icon {
-        margin-right: 1rem;
+        margin:0 1rem ;
     }
 
     &__text {
+        margin: 0 1rem;
+        @include flexCenter;
+        font-size: 1.2rem;
+        background-color: $background-one;
+        border: none;
         font-weight: 700;
     }
 }
