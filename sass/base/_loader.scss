@@ -25,29 +25,7 @@
 
     }
 
-    @keyframes flash {
-        0% {
-            color: $color-Primary;
-            text-shadow: 0 0 7px $color-Primary;
-        }
-
-        50% {
-            color: $color-secondary;
-            text-shadow: none;
-        }
-
-        100% {
-            color: $color-tertiary;
-            text-shadow: 0 0 7px $color-tertiary;
-        }
-    }
-
-    @keyframes loader {
-        100% {
-            opacity: 0;
-            z-index: -10;
-        }
-    }
+  
 
     .fondu-out {
         opacity: 0;
